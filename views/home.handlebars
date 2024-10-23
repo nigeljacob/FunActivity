@@ -1,0 +1,16 @@
+<h1 class="header">{{name}}'s Profile</h1>
+<div class="content">
+    <p><strong>Age:</strong> {{age}}</p>
+    <p><strong>Message:</strong> "{{message}}"</p>
+
+    <h2>Hobbies:</h2>
+    <ul>
+        {{#each hobbies}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+
+    <h2>Contact Info:</h2>
+    <p>Email: {{contact.email}}</p>
+    <p>Phone: {{contact.phone}}</p>
+</div>
