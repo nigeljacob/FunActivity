@@ -12,7 +12,20 @@ app.set('view engine', 'handlebars');
 app.use(express.static('public'));
 
 // JSON data
-const userData = null
+const userData =  {
+    name: "Tom",
+    age: 20,
+    message: "Hello World",
+    hobbies: [
+        "hobby 1",
+        "hobby 2,
+        "hobby 3,
+    ],
+    contact: {
+        email: "tom@gmail.com",
+        phone: "1234567890"
+    }
+}
 
 app.get('/', (req, res) => {
     res.render('home', userData);
