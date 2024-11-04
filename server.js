@@ -18,8 +18,8 @@ const userData =  {
     message: "Hello World",
     hobbies: [
         "hobby 1",
-        "hobby 2,
-        "hobby 3,
+        "hobby 2",
+        "hobby 3",
     ],
     contact: {
         email: "tom@gmail.com",
