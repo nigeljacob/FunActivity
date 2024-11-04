@@ -31,6 +31,10 @@ app.get('/', (req, res) => {
     res.render('home', userData);
 });
 
+app.get('/hello', (req, res) => {
+    res.send('Hello User!');
+});
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
